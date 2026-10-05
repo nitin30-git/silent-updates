@@ -1,0 +1,828 @@
+{
+ "patronus-studio/wolf-defender-prompt-injection": {
+  "id": "patronus-studio/wolf-defender-prompt-injection",
+  "fam": "injection",
+  "source": "deepset/prompt-injections/-/test + jackhhao/jailbreak-classification/-/test + xTRam1/safe-guard-prompt-injection/-/test",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1"
+  ],
+  "labels_R": {
+   "0": "LABEL_0",
+   "1": "LABEL_1"
+  },
+  "labels_L": {
+   "0": "benign",
+   "1": "injection"
+  },
+  "map_R": [
+   0,
+   1
+  ],
+  "map_L": [
+   0,
+   1
+  ],
+  "acc_R": 0.9546666666666667,
+  "acc_L": 0.9706666666666667,
+  "f1_R": 0.950356170144006,
+  "f1_L": 0.9672262047349196,
+  "disagree": 0.042666666666666665,
+  "mcnemar_p": 0.0036899642765400487,
+  "R_only_correct": 20,
+  "L_only_correct": 44,
+  "random_head": false,
+  "miss_rate_R": 0.05172413793103448,
+  "miss_rate_L": 0.07088122605363985,
+  "fp_rate_R": 0.041922290388548056,
+  "fp_rate_L": 0.007157464212678937
+ },
+ "patronus-studio/wolf-defender-prompt-injection-small": {
+  "id": "patronus-studio/wolf-defender-prompt-injection-small",
+  "fam": "injection",
+  "source": "deepset/prompt-injections/-/test + jackhhao/jailbreak-classification/-/test + xTRam1/safe-guard-prompt-injection/-/test",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1"
+  ],
+  "labels_R": {
+   "0": "LABEL_0",
+   "1": "LABEL_1"
+  },
+  "labels_L": {
+   "0": "benign",
+   "1": "injection"
+  },
+  "map_R": [
+   0,
+   1
+  ],
+  "map_L": [
+   0,
+   1
+  ],
+  "acc_R": 0.9586666666666667,
+  "acc_L": 0.9593333333333334,
+  "f1_R": 0.9542092077897524,
+  "f1_L": 0.9542270906588748,
+  "disagree": 0.03133333333333333,
+  "mcnemar_p": 1.0,
+  "R_only_correct": 23,
+  "L_only_correct": 24,
+  "random_head": false,
+  "miss_rate_R": 0.07088122605363985,
+  "miss_rate_L": 0.10153256704980843,
+  "fp_rate_R": 0.02556237218813906,
+  "fp_rate_L": 0.0081799591002045
+ },
+ "dcarpintero/pangolin-guard-base": {
+  "id": "dcarpintero/pangolin-guard-base",
+  "fam": "injection",
+  "source": "deepset/prompt-injections/-/test + jackhhao/jailbreak-classification/-/test + xTRam1/safe-guard-prompt-injection/-/test",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1"
+  ],
+  "labels_R": {
+   "0": "safe",
+   "1": "unsafe"
+  },
+  "labels_L": {
+   "0": "safe",
+   "1": "unsafe"
+  },
+  "map_R": [
+   0,
+   1
+  ],
+  "map_L": [
+   0,
+   1
+  ],
+  "acc_R": 0.9853333333333333,
+  "acc_L": 0.986,
+  "f1_R": 0.9837063106939927,
+  "f1_L": 0.984454201831838,
+  "disagree": 0.01,
+  "mcnemar_p": 1.0,
+  "R_only_correct": 7,
+  "L_only_correct": 8,
+  "random_head": false,
+  "miss_rate_R": 0.038314176245210725,
+  "miss_rate_L": 0.03639846743295019,
+  "fp_rate_R": 0.002044989775051125,
+  "fp_rate_L": 0.002044989775051125
+ },
+ "NeuralTrust/prompt-guard-oss-small": {
+  "id": "NeuralTrust/prompt-guard-oss-small",
+  "fam": "injection",
+  "source": "deepset/prompt-injections/-/test + jackhhao/jailbreak-classification/-/test + xTRam1/safe-guard-prompt-injection/-/test",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1"
+  ],
+  "labels_R": {
+   "0": "benign",
+   "1": "jailbreak"
+  },
+  "labels_L": {
+   "0": "benign",
+   "1": "jailbreak"
+  },
+  "map_R": [
+   0,
+   1
+  ],
+  "map_L": [
+   0,
+   1
+  ],
+  "acc_R": 0.8273333333333334,
+  "acc_L": 0.818,
+  "f1_R": 0.8093231881162948,
+  "f1_L": 0.7637098761193488,
+  "disagree": 0.184,
+  "mcnemar_p": 0.43397059099328233,
+  "R_only_correct": 145,
+  "L_only_correct": 131,
+  "random_head": false,
+  "miss_rate_R": 0.25287356321839083,
+  "miss_rate_L": 0.5134099616858238,
+  "fp_rate_R": 0.12985685071574643,
+  "fp_rate_L": 0.005112474437627812
+ },
+ "gbv/mdeberta-ru-prompt-injection": {
+  "id": "gbv/mdeberta-ru-prompt-injection",
+  "fam": "injection",
+  "source": "deepset/prompt-injections/-/test + jackhhao/jailbreak-classification/-/test + xTRam1/safe-guard-prompt-injection/-/test",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1"
+  ],
+  "labels_R": {
+   "0": "benign",
+   "1": "prompt_injection"
+  },
+  "labels_L": {
+   "0": "benign",
+   "1": "prompt_injection"
+  },
+  "map_R": [
+   0,
+   1
+  ],
+  "map_L": [
+   0,
+   1
+  ],
+  "acc_R": 0.8326666666666667,
+  "acc_L": 0.842,
+  "f1_R": 0.7914255688431349,
+  "f1_L": 0.8064306409133207,
+  "disagree": 0.064,
+  "mcnemar_p": 0.18428587288036472,
+  "R_only_correct": 41,
+  "L_only_correct": 55,
+  "random_head": false,
+  "miss_rate_R": 0.4425287356321839,
+  "miss_rate_L": 0.4061302681992337,
+  "fp_rate_R": 0.02044989775051125,
+  "fp_rate_L": 0.02556237218813906
+ },
+ "deepset/deberta-v3-base-injection": {
+  "id": "deepset/deberta-v3-base-injection",
+  "fam": "injection",
+  "source": "deepset/prompt-injections/-/test + jackhhao/jailbreak-classification/-/test + xTRam1/safe-guard-prompt-injection/-/test",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1"
+  ],
+  "labels_R": {
+   "0": "LEGIT",
+   "1": "INJECTION"
+  },
+  "labels_L": {
+   "0": "LEGIT",
+   "1": "INJECTION"
+  },
+  "map_R": [
+   0,
+   1
+  ],
+  "map_L": [
+   0,
+   1
+  ],
+  "acc_R": 0.5246666666666666,
+  "acc_L": 0.5246666666666666,
+  "f1_R": 0.5116382607107387,
+  "f1_L": 0.5116382607107387,
+  "disagree": 0.0,
+  "mcnemar_p": 1.0,
+  "R_only_correct": 0,
+  "L_only_correct": 0,
+  "random_head": false,
+  "miss_rate_R": 0.011494252873563218,
+  "miss_rate_L": 0.011494252873563218,
+  "fp_rate_R": 0.7229038854805726,
+  "fp_rate_L": 0.7229038854805726
+ },
+ "eliasalbouzidi/distilbert-nsfw-text-classifier": {
+  "id": "eliasalbouzidi/distilbert-nsfw-text-classifier",
+  "fam": "toxic_en",
+  "source": "textdetox/multilingual_toxicity_dataset/-/en + textdetox/multilingual_toxicity_dataset/-/train + OxAISH-AL-LLM/wiki_toxic/-/test + google/civil_comments/-/test",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1"
+  ],
+  "labels_R": {
+   "0": "safe",
+   "1": "nsfw"
+  },
+  "labels_L": {
+   "0": "safe",
+   "1": "nsfw"
+  },
+  "map_R": [
+   0,
+   1
+  ],
+  "map_L": [
+   0,
+   1
+  ],
+  "acc_R": 0.7673333333333333,
+  "acc_L": 0.7926666666666666,
+  "f1_R": 0.6194871981246933,
+  "f1_L": 0.6571746043177628,
+  "disagree": 0.16533333333333333,
+  "mcnemar_p": 0.018617760785406643,
+  "R_only_correct": 105,
+  "L_only_correct": 143,
+  "random_head": false,
+  "miss_rate_R": 0.6707317073170732,
+  "miss_rate_L": 0.625,
+  "fp_rate_R": 0.11006825938566553,
+  "fp_rate_L": 0.09044368600682594
+ },
+ "cardiffnlp/twitter-roberta-base-hate-latest": {
+  "id": "cardiffnlp/twitter-roberta-base-hate-latest",
+  "fam": "toxic_en",
+  "source": "textdetox/multilingual_toxicity_dataset/-/en + textdetox/multilingual_toxicity_dataset/-/train + OxAISH-AL-LLM/wiki_toxic/-/test + google/civil_comments/-/test",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1"
+  ],
+  "labels_R": {
+   "0": "NOT-HATE",
+   "1": "HATE"
+  },
+  "labels_L": {
+   "0": "NOT-HATE",
+   "1": "HATE"
+  },
+  "map_R": [
+   0,
+   1
+  ],
+  "map_L": [
+   0,
+   1
+  ],
+  "acc_R": 0.79,
+  "acc_L": 0.7966666666666666,
+  "f1_R": 0.5306796454023988,
+  "f1_L": 0.5718020162275337,
+  "disagree": 0.03333333333333333,
+  "mcnemar_p": 0.20263875106454066,
+  "R_only_correct": 20,
+  "L_only_correct": 30,
+  "random_head": false,
+  "miss_rate_R": 0.8932926829268293,
+  "miss_rate_L": 0.8353658536585366,
+  "fp_rate_R": 0.01877133105802048,
+  "fp_rate_L": 0.026450511945392493
+ },
+ "unitary/toxic-bert": {
+  "id": "unitary/toxic-bert",
+  "fam": "toxic_en",
+  "source": "textdetox/multilingual_toxicity_dataset/-/en + textdetox/multilingual_toxicity_dataset/-/train + OxAISH-AL-LLM/wiki_toxic/-/test + google/civil_comments/-/test",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1"
+  ],
+  "labels_R": {
+   "0": "toxic",
+   "1": "severe_toxic",
+   "2": "obscene",
+   "3": "threat",
+   "4": "insult",
+   "5": "identity_hate"
+  },
+  "labels_L": {
+   "0": "toxic",
+   "1": "severe_toxic",
+   "2": "obscene",
+   "3": "threat",
+   "4": "insult",
+   "5": "identity_hate"
+  },
+  "map_R": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "map_L": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "acc_R": 0.7813333333333333,
+  "acc_L": 0.7813333333333333,
+  "f1_R": 0.43862275449101795,
+  "f1_L": 0.43862275449101795,
+  "disagree": 0.0,
+  "mcnemar_p": 1.0,
+  "R_only_correct": 0,
+  "L_only_correct": 0,
+  "random_head": false,
+  "miss_rate_R": 1.0,
+  "miss_rate_L": 1.0,
+  "fp_rate_R": 0.0,
+  "fp_rate_L": 0.0
+ },
+ "textdetox/xlmr-large-toxicity-classifier": {
+  "id": "textdetox/xlmr-large-toxicity-classifier",
+  "fam": "toxic_en",
+  "source": "textdetox/multilingual_toxicity_dataset/-/en + textdetox/multilingual_toxicity_dataset/-/train + OxAISH-AL-LLM/wiki_toxic/-/test + google/civil_comments/-/test",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1"
+  ],
+  "labels_R": {
+   "0": "LABEL_0",
+   "1": "LABEL_1"
+  },
+  "labels_L": {
+   "0": "neutral",
+   "1": "toxic"
+  },
+  "map_R": [
+   0,
+   1
+  ],
+  "map_L": [
+   0,
+   1
+  ],
+  "acc_R": 0.848,
+  "acc_L": 0.848,
+  "f1_R": 0.8062963869178696,
+  "f1_L": 0.8062963869178696,
+  "disagree": 0.0,
+  "mcnemar_p": 1.0,
+  "R_only_correct": 0,
+  "L_only_correct": 0,
+  "random_head": false,
+  "miss_rate_R": 0.12195121951219512,
+  "miss_rate_L": 0.12195121951219512,
+  "fp_rate_R": 0.16040955631399317,
+  "fp_rate_L": 0.16040955631399317
+ },
+ "ml6team/distilbert-base-german-cased-toxic-comments": {
+  "id": "ml6team/distilbert-base-german-cased-toxic-comments",
+  "fam": "toxic_de",
+  "source": "textdetox/multilingual_toxicity_dataset/-/de + textdetox/multilingual_toxicity_dataset/-/train",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1"
+  ],
+  "labels_R": {
+   "0": "LABEL_0",
+   "1": "LABEL_1"
+  },
+  "labels_L": {
+   "0": "non_toxic",
+   "1": "toxic"
+  },
+  "map_R": [
+   0,
+   1
+  ],
+  "map_L": [
+   0,
+   1
+  ],
+  "acc_R": 0.5293333333333333,
+  "acc_L": 0.532,
+  "f1_R": 0.519366925908982,
+  "f1_L": 0.40074983098072153,
+  "disagree": 0.616,
+  "mcnemar_p": 0.9213892314874513,
+  "R_only_correct": 460,
+  "L_only_correct": 464,
+  "random_head": false,
+  "miss_rate_R": 0.3230563002680965,
+  "miss_rate_L": 0.935656836461126,
+  "fp_rate_R": 0.616710875331565,
+  "fp_rate_L": 0.005305039787798408
+ },
+ "MilaNLProc/feel-it-italian-sentiment": {
+  "id": "MilaNLProc/feel-it-italian-sentiment",
+  "fam": "sent_it",
+  "note": "too many classes to map"
+ },
+ "UMUTeam/roberta-spanish-sentiment-analysis": {
+  "id": "UMUTeam/roberta-spanish-sentiment-analysis",
+  "fam": "sent_es",
+  "source": "cardiffnlp/tweet_sentiment_multilingual/spanish/test",
+  "n": 870,
+  "gold_classes": [
+   "negative",
+   "neutral",
+   "positive"
+  ],
+  "labels_R": {
+   "0": "Negative",
+   "1": "Neutral",
+   "2": "Positive"
+  },
+  "labels_L": {
+   "0": "negative",
+   "1": "neutral",
+   "2": "positive"
+  },
+  "map_R": [
+   1,
+   0,
+   2
+  ],
+  "map_L": [
+   0,
+   1,
+   2
+  ],
+  "acc_R": 0.3586206896551724,
+  "acc_L": 0.7942528735632184,
+  "f1_R": 0.274851813405598,
+  "f1_L": 0.7970191856443328,
+  "disagree": 0.664367816091954,
+  "mcnemar_p": 7.580325439706713e-72,
+  "R_only_correct": 61,
+  "L_only_correct": 440,
+  "random_head": false
+ },
+ "pysentimiento/robertuito-sentiment-analysis": {
+  "id": "pysentimiento/robertuito-sentiment-analysis",
+  "fam": "sent_es",
+  "source": "cardiffnlp/tweet_sentiment_multilingual/spanish/test",
+  "n": 870,
+  "gold_classes": [
+   "negative",
+   "neutral",
+   "positive"
+  ],
+  "labels_R": {
+   "0": "NEG",
+   "1": "NEU",
+   "2": "POS"
+  },
+  "labels_L": {
+   "0": "NEG",
+   "1": "NEU",
+   "2": "POS"
+  },
+  "map_R": [
+   0,
+   1,
+   2
+  ],
+  "map_L": [
+   0,
+   1,
+   2
+  ],
+  "acc_R": 0.8160919540229885,
+  "acc_L": 0.7689655172413793,
+  "f1_R": 0.8180715263551149,
+  "f1_L": 0.7663009204103822,
+  "disagree": 0.13333333333333333,
+  "mcnemar_p": 9.182026206268604e-05,
+  "R_only_correct": 74,
+  "L_only_correct": 33,
+  "random_head": false
+ },
+ "finiteautomata/beto-sentiment-analysis": {
+  "id": "finiteautomata/beto-sentiment-analysis",
+  "fam": "sent_es",
+  "source": "cardiffnlp/tweet_sentiment_multilingual/spanish/test",
+  "n": 870,
+  "gold_classes": [
+   "negative",
+   "neutral",
+   "positive"
+  ],
+  "labels_R": {
+   "0": "NEG",
+   "1": "NEU",
+   "2": "POS"
+  },
+  "labels_L": {
+   "0": "NEG",
+   "1": "NEU",
+   "2": "POS"
+  },
+  "map_R": [
+   0,
+   1,
+   2
+  ],
+  "map_L": [
+   0,
+   1,
+   2
+  ],
+  "acc_R": 0.7873563218390804,
+  "acc_L": 0.8218390804597702,
+  "f1_R": 0.7863877302410653,
+  "f1_L": 0.8227399623615348,
+  "disagree": 0.14367816091954022,
+  "mcnemar_p": 0.006351623919901832,
+  "R_only_correct": 42,
+  "L_only_correct": 72,
+  "random_head": false
+ },
+ "finiteautomata/bertweet-base-sentiment-analysis": {
+  "id": "finiteautomata/bertweet-base-sentiment-analysis",
+  "fam": "sent_en",
+  "source": "cardiffnlp/tweet_sentiment_multilingual/english/test",
+  "n": 870,
+  "gold_classes": [
+   "negative",
+   "neutral",
+   "positive"
+  ],
+  "labels_R": {
+   "0": "NEG",
+   "1": "NEU",
+   "2": "POS"
+  },
+  "labels_L": {
+   "0": "NEG",
+   "1": "NEU",
+   "2": "POS"
+  },
+  "map_R": [
+   0,
+   1,
+   2
+  ],
+  "map_L": [
+   0,
+   1,
+   2
+  ],
+  "acc_R": 0.7264367816091954,
+  "acc_L": 0.7482758620689656,
+  "f1_R": 0.7284141755938668,
+  "f1_L": 0.7511518777428886,
+  "disagree": 0.14942528735632185,
+  "mcnemar_p": 0.10420386640532595,
+  "R_only_correct": 52,
+  "L_only_correct": 71,
+  "random_head": false
+ },
+ "tabularisai/multilingual-sentiment-analysis": {
+  "id": "tabularisai/multilingual-sentiment-analysis",
+  "fam": "sent_es",
+  "source": "cardiffnlp/tweet_sentiment_multilingual/spanish/test",
+  "n": 870,
+  "gold_classes": [
+   "negative",
+   "neutral",
+   "positive"
+  ],
+  "labels_R": {
+   "0": "LABEL_0",
+   "1": "LABEL_1",
+   "2": "LABEL_2",
+   "3": "LABEL_3",
+   "4": "LABEL_4"
+  },
+  "labels_L": {
+   "0": "Very Negative",
+   "1": "Negative",
+   "2": "Neutral",
+   "3": "Positive",
+   "4": "Very Positive"
+  },
+  "map_R": [
+   0,
+   0,
+   1,
+   2,
+   2
+  ],
+  "map_L": [
+   0,
+   0,
+   1,
+   2,
+   2
+  ],
+  "acc_R": 0.5183908045977011,
+  "acc_L": 0.5402298850574713,
+  "f1_R": 0.4854247814401192,
+  "f1_L": 0.5312592658089345,
+  "disagree": 0.3195402298850575,
+  "mcnemar_p": 0.22165133176798113,
+  "R_only_correct": 99,
+  "L_only_correct": 118,
+  "random_head": false
+ },
+ "tabularisai/robust-sentiment-analysis": {
+  "id": "tabularisai/robust-sentiment-analysis",
+  "fam": "sent_en",
+  "source": "cardiffnlp/tweet_sentiment_multilingual/english/test",
+  "n": 870,
+  "gold_classes": [
+   "negative",
+   "neutral",
+   "positive"
+  ],
+  "labels_R": {
+   "0": "LABEL_0",
+   "1": "LABEL_1",
+   "2": "LABEL_2",
+   "3": "LABEL_3",
+   "4": "LABEL_4"
+  },
+  "labels_L": {
+   "0": "Very Negative",
+   "1": "Negative",
+   "2": "Neutral",
+   "3": "Positive",
+   "4": "Very Positive"
+  },
+  "map_R": [
+   0,
+   0,
+   1,
+   2,
+   2
+  ],
+  "map_L": [
+   0,
+   0,
+   1,
+   2,
+   2
+  ],
+  "acc_R": 0.5448275862068965,
+  "acc_L": 0.6057471264367816,
+  "f1_R": 0.5440205981382452,
+  "f1_L": 0.6094057148956874,
+  "disagree": 0.35747126436781607,
+  "mcnemar_p": 0.0014752559593667967,
+  "R_only_correct": 108,
+  "L_only_correct": 161,
+  "random_head": false
+ },
+ "StephanAkkerman/FinTwitBERT-sentiment": {
+  "id": "StephanAkkerman/FinTwitBERT-sentiment",
+  "fam": "fin_en",
+  "source": "zeroshot/twitter-financial-news-sentiment/-/validation",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1",
+   "2"
+  ],
+  "labels_R": {
+   "0": "NEUTRAL",
+   "1": "BULLISH",
+   "2": "BEARISH"
+  },
+  "labels_L": {
+   "0": "NEUTRAL",
+   "1": "BULLISH",
+   "2": "BEARISH"
+  },
+  "map_R": [
+   2,
+   1,
+   0
+  ],
+  "map_L": [
+   2,
+   1,
+   0
+  ],
+  "acc_R": 0.9513333333333334,
+  "acc_L": 0.8306666666666667,
+  "f1_R": 0.9432841229561069,
+  "f1_L": 0.8026517024220335,
+  "disagree": 0.17666666666666667,
+  "mcnemar_p": 1.0572748823912421e-32,
+  "R_only_correct": 217,
+  "L_only_correct": 36,
+  "random_head": false
+ },
+ "beethogedeon/Modern-FinBERT-large": {
+  "id": "beethogedeon/Modern-FinBERT-large",
+  "fam": "fin_en",
+  "source": "zeroshot/twitter-financial-news-sentiment/-/validation",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1",
+   "2"
+  ],
+  "labels_R": {
+   "0": "neutral",
+   "1": "positive",
+   "2": "negative"
+  },
+  "labels_L": {
+   "0": "neutral",
+   "1": "positive",
+   "2": "negative"
+  },
+  "map_R": [
+   2,
+   1,
+   0
+  ],
+  "map_L": [
+   2,
+   1,
+   0
+  ],
+  "acc_R": 0.7506666666666667,
+  "acc_L": 0.76,
+  "f1_R": 0.6736990892835566,
+  "f1_L": 0.6910716454147753,
+  "disagree": 0.19933333333333333,
+  "mcnemar_p": 0.43397059099328233,
+  "R_only_correct": 131,
+  "L_only_correct": 145,
+  "random_head": false
+ },
+ "neoyipeng/ModernFinBERT-base": {
+  "id": "neoyipeng/ModernFinBERT-base",
+  "fam": "fin_en",
+  "source": "zeroshot/twitter-financial-news-sentiment/-/validation",
+  "n": 1500,
+  "gold_classes": [
+   "0",
+   "1",
+   "2"
+  ],
+  "labels_R": {
+   "0": "LABEL_0",
+   "1": "LABEL_1",
+   "2": "LABEL_2"
+  },
+  "labels_L": {
+   "0": "LABEL_0",
+   "1": "LABEL_1",
+   "2": "LABEL_2"
+  },
+  "map_R": [
+   0,
+   2,
+   1
+  ],
+  "map_L": [
+   0,
+   2,
+   1
+  ],
+  "acc_R": 0.756,
+  "acc_L": 0.8566666666666667,
+  "f1_R": 0.7249669213493503,
+  "f1_L": 0.8080732462361769,
+  "disagree": 0.23133333333333334,
+  "mcnemar_p": 1.3932215871291555e-17,
+  "R_only_correct": 85,
+  "L_only_correct": 236,
+  "random_head": false
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "survival": {
+  "n": 875,
+  "events": 101,
+  "s180": 80.3,
+  "s365": 77.3,
+  "s730": 76.3,
+  "s1095": 76.3,
+  "median_days": null
+ },
+ "predictors": {
+  "p_downloads": 0.0362,
+  "r_age": -0.049,
+  "p_age": 0.14839577989800556,
+  "quartiles": [
+   [
+    25,
+    219
+   ],
+   [
+    36,
+    218
+   ],
+   [
+    21,
+    219
+   ],
+   [
+    18,
+    219
+   ]
+  ]
+ },
+ "dichotomy": {
+  "rewrite": [
+   53,
+   62
+  ],
+  "inert": [
+   0,
+   154
+  ],
+  "p": 1.7347286759936466e-41
+ },
+ "rq5_holm": {
+  "k": 17,
+  "significant": 6,
+  "improved": 4,
+  "degraded": 2
+ },
+ "classifier_check": {
+  "agree": 212,
+  "total": 222,
+  "pct": 95.5
+ },
+ "pin_cost": {
+  "unexplained": 268,
+  "retrain / improvement": 415,
+  "explicit fix": 22
+ }
+}

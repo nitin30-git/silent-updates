@@ -1,0 +1,83 @@
+{
+ "github": {
+  "queries": 560,
+  "fragments_read": 7720,
+  "fragments_pinned": 143,
+  "pin_pct": 1.9,
+  "pin_ci": [
+   1.6,
+   2.2
+  ],
+  "rewritten_models_named": "69/100",
+  "repos_depending_on_rewritten": 754,
+  "with_dependents_changed": "239/280",
+  "with_dependents_control": "223/280",
+  "dependents_fisher_p": 0.095,
+  "pin_pct_rewritten": 2.6,
+  "pin_pct_converted_or_metadata": 0.9,
+  "pin_pct_unchanged": 2.5
+ },
+ "tags": {
+  "rows": [
+   {
+    "tag": "automatic-speech-recognition",
+    "n": 209,
+    "rewritten": 51,
+    "pct": 24.4,
+    "any_change_pct": 46.4
+   },
+   {
+    "tag": "object-detection",
+    "n": 85,
+    "rewritten": 16,
+    "pct": 18.8,
+    "any_change_pct": 51.8
+   },
+   {
+    "tag": "sentence-similarity",
+    "n": 238,
+    "rewritten": 40,
+    "pct": 16.8,
+    "any_change_pct": 55.9
+   },
+   {
+    "tag": "fill-mask",
+    "n": 235,
+    "rewritten": 39,
+    "pct": 16.6,
+    "any_change_pct": 70.2
+   },
+   {
+    "tag": "text-classification",
+    "n": 233,
+    "rewritten": 20,
+    "pct": 8.6,
+    "any_change_pct": 38.6
+   },
+   {
+    "tag": "image-classification",
+    "n": 249,
+    "rewritten": 18,
+    "pct": 7.2,
+    "any_change_pct": 53.4
+   },
+   {
+    "tag": "token-classification",
+    "n": 250,
+    "rewritten": 4,
+    "pct": 1.6,
+    "any_change_pct": 6.8
+   }
+  ],
+  "total_n": 1499,
+  "total_rewritten": 188,
+  "total_pct": 12.5,
+  "total_ci": [
+   11.0,
+   14.3
+  ],
+  "chi2": 74.4,
+  "chi2_p": 5.2e-14,
+  "text_cls_vs_main_fisher_p": 0.237
+ }
+}

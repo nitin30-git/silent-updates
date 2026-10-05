@@ -1,0 +1,32 @@
+{
+ "format switch only (bin->safetensors)": {
+  "n": 128,
+  "gt0": 10,
+  "gt10": 7,
+  "median": 0.0,
+  "max": 0.7252785515320335
+ },
+ "weights overwritten (same format)": {
+  "n": 46,
+  "gt0": 43,
+  "gt10": 28,
+  "median": 0.17026462395543174,
+  "max": 0.908774373259053
+ },
+ "config/tokenizer only": {
+  "n": 42,
+  "gt0": 0,
+  "gt10": 0,
+  "median": 0.0,
+  "max": 0.0
+ },
+ "sst2": {
+  "n": 1,
+  "worse": 1,
+  "better": 0,
+  "same": 0,
+  "mean_delta": -0.032110091743119296
+ },
+ "dl_flippers": 1546678,
+ "dl_evaluated": 24450551
+}

@@ -1,0 +1,128 @@
+{
+ "safety classifiers": {
+  "n": 125,
+  "rewritten": 18,
+  "pct": 14.4,
+  "ci": [
+   9.3,
+   21.6
+  ],
+  "downloads": 3709461,
+  "downloads_affected": 69346
+ },
+ "all other models": {
+  "n": 750,
+  "rewritten": 82,
+  "pct": 10.9,
+  "ci": [
+   8.9,
+   13.4
+  ],
+  "downloads": 55497992,
+  "downloads_affected": 2449703
+ },
+ "evaluated_safety": {
+  "n": 46,
+  "flipped": 14,
+  "pct": 30.4
+ },
+ "flipping_safety": [
+  {
+   "id": "piuba-bigdata/beto-contextualized-hate-speech",
+   "flip": 0.7253,
+   "dl": 17660
+  },
+  {
+   "id": "ml6team/distilbert-base-german-cased-toxic-comments",
+   "flip": 0.3541,
+   "dl": 516
+  },
+  {
+   "id": "patronus-studio/wolf-defender-prompt-injection",
+   "flip": 0.3412,
+   "dl": 4187
+  },
+  {
+   "id": "Intel/polite-guard",
+   "flip": 0.3012,
+   "dl": 15553
+  },
+  {
+   "id": "eliasalbouzidi/distilbert-nsfw-text-classifier",
+   "flip": 0.2573,
+   "dl": 6079
+  },
+  {
+   "id": "patronus-studio/wolf-defender-prompt-injection-small",
+   "flip": 0.1671,
+   "dl": 5866
+  },
+  {
+   "id": "ealvaradob/bert-finetuned-phishing",
+   "flip": 0.1609,
+   "dl": 3676
+  },
+  {
+   "id": "dcarpintero/pangolin-guard-base",
+   "flip": 0.1079,
+   "dl": 1044
+  },
+  {
+   "id": "NeuralTrust/prompt-guard-oss-small",
+   "flip": 0.0926,
+   "dl": 1300
+  },
+  {
+   "id": "cardiffnlp/twitter-roberta-base-hate-latest",
+   "flip": 0.0386,
+   "dl": 4287
+  },
+  {
+   "id": "NAMAA-Space/Ara-Prompt-Guard_V0",
+   "flip": 0.0334,
+   "dl": 2442
+  },
+  {
+   "id": "gbv/mdeberta-ru-prompt-injection",
+   "flip": 0.0167,
+   "dl": 429
+  },
+  {
+   "id": "IlyaGusev/rubertconv_toxic_clf",
+   "flip": 0.0077,
+   "dl": 658
+  },
+  {
+   "id": "cardiffnlp/twitter-roberta-base-hate-multiclass-latest",
+   "flip": 0.0003,
+   "dl": 997
+  }
+ ],
+ "dl_flipping_safety": 64694,
+ "families": {
+  "prompt injection / jailbreak": {
+   "n": 5,
+   "dl": 14224
+  },
+  "toxicity / hate / NSFW": {
+   "n": 4,
+   "dl": 28542
+  },
+  "phishing / spam / fraud": {
+   "n": 1,
+   "dl": 3676
+  },
+  "AI-text / fake-news detection": {
+   "n": 4,
+   "dl": 34345
+  },
+  "sentiment / emotion": {
+   "n": 19,
+   "dl": 1421810
+  },
+  "other": {
+   "n": 17,
+   "dl": 44081
+  }
+ }
+}

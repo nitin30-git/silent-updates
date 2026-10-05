@@ -1,0 +1,4 @@
+# analysis only; the collection scripts list their own installs at the top of each file
+numpy
+scipy
+matplotlib

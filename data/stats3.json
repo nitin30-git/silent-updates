@@ -1,0 +1,95 @@
+{
+ "A. rewritten in place (same format)": {
+  "n": 46,
+  "gt0": 43,
+  "gt0_pct": 93.5,
+  "gt0_ci": [
+   82.5,
+   97.8
+  ],
+  "gt10": 28,
+  "gt10_pct": 60.9,
+  "gt10_ci": [
+   46.5,
+   73.6
+  ],
+  "median": 0.1703
+ },
+ "B. rewritten + format switch": {
+  "n": 16,
+  "gt0": 10,
+  "gt0_pct": 62.5,
+  "gt0_ci": [
+   38.6,
+   81.5
+  ],
+  "gt10": 7,
+  "gt10_pct": 43.8,
+  "gt10_ci": [
+   23.1,
+   66.8
+  ],
+  "median": 0.0675
+ },
+ "B0. pure format conversion (bot)": {
+  "n": 112,
+  "gt0": 0,
+  "gt0_pct": 0.0,
+  "gt0_ci": [
+   0,
+   3.3
+  ],
+  "gt10": 0,
+  "gt10_pct": 0.0,
+  "gt10_ci": [
+   0,
+   3.3
+  ],
+  "median": 0.0
+ },
+ "C. config/tokenizer only": {
+  "n": 42,
+  "gt0": 0,
+  "gt0_pct": 0.0,
+  "gt0_ci": [
+   0,
+   8.4
+  ],
+  "gt10": 0,
+  "gt10_pct": 0.0,
+  "gt10_ci": [
+   0,
+   8.4
+  ],
+  "median": 0.0
+ },
+ "genuine_rewrite": {
+  "k": 53,
+  "n": 62,
+  "pct": 85.5,
+  "ci": [
+   74.7,
+   92.2
+  ]
+ },
+ "inert": {
+  "k": 0,
+  "n": 154,
+  "pct": 0.0,
+  "ci": [
+   0.0,
+   2.4
+  ]
+ },
+ "corpus_genuine_rewrite": {
+  "k": 100,
+  "n": 875,
+  "pct": 11.4,
+  "ci": [
+   9.5,
+   13.7
+  ]
+ },
+ "dl_genuine_rewrite": 2519049,
+ "churn_repos": 8
+}

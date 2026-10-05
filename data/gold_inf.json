@@ -1,0 +1,138 @@
+[
+{
+"id": "patronus-studio/wolf-defender-prompt-injection",
+"accR": 0.9546666666666667,
+"accL": 0.9706666666666667,
+"p": 0.0036899642765400487,
+"fam": "injection",
+"dl": 4187
+},
+{
+"id": "patronus-studio/wolf-defender-prompt-injection-small",
+"accR": 0.9586666666666667,
+"accL": 0.9593333333333334,
+"p": 1.0,
+"fam": "injection",
+"dl": 5866
+},
+{
+"id": "dcarpintero/pangolin-guard-base",
+"accR": 0.9853333333333333,
+"accL": 0.986,
+"p": 1.0,
+"fam": "injection",
+"dl": 1044
+},
+{
+"id": "NeuralTrust/prompt-guard-oss-small",
+"accR": 0.8273333333333334,
+"accL": 0.818,
+"p": 0.43397059099328233,
+"fam": "injection",
+"dl": 1300
+},
+{
+"id": "gbv/mdeberta-ru-prompt-injection",
+"accR": 0.8326666666666667,
+"accL": 0.842,
+"p": 0.18428587288036472,
+"fam": "injection",
+"dl": 429
+},
+{
+"id": "eliasalbouzidi/distilbert-nsfw-text-classifier",
+"accR": 0.7673333333333333,
+"accL": 0.7926666666666666,
+"p": 0.018617760785406643,
+"fam": "toxic_en",
+"dl": 6079
+},
+{
+"id": "cardiffnlp/twitter-roberta-base-hate-latest",
+"accR": 0.79,
+"accL": 0.7966666666666666,
+"p": 0.20263875106454066,
+"fam": "toxic_en",
+"dl": 4287
+},
+{
+"id": "textdetox/xlmr-large-toxicity-classifier",
+"accR": 0.848,
+"accL": 0.848,
+"p": 1.0,
+"fam": "toxic_en",
+"dl": 4933
+},
+{
+"id": "UMUTeam/roberta-spanish-sentiment-analysis",
+"accR": 0.3586206896551724,
+"accL": 0.7942528735632184,
+"p": 7.580325439706713e-72,
+"fam": "sent_es",
+"dl": 16551
+},
+{
+"id": "pysentimiento/robertuito-sentiment-analysis",
+"accR": 0.8160919540229885,
+"accL": 0.7689655172413793,
+"p": 9.182026206268604e-05,
+"fam": "sent_es",
+"dl": 788284
+},
+{
+"id": "finiteautomata/beto-sentiment-analysis",
+"accR": 0.7873563218390804,
+"accL": 0.8218390804597702,
+"p": 0.006351623919901832,
+"fam": "sent_es",
+"dl": 39213
+},
+{
+"id": "finiteautomata/bertweet-base-sentiment-analysis",
+"accR": 0.7264367816091954,
+"accL": 0.7482758620689656,
+"p": 0.10420386640532595,
+"fam": "sent_en",
+"dl": 91409
+},
+{
+"id": "tabularisai/multilingual-sentiment-analysis",
+"accR": 0.5183908045977011,
+"accL": 0.5402298850574713,
+"p": 0.22165133176798113,
+"fam": "sent_es",
+"dl": 156714
+},
+{
+"id": "tabularisai/robust-sentiment-analysis",
+"accR": 0.5448275862068965,
+"accL": 0.6057471264367816,
+"p": 0.0014752559593667967,
+"fam": "sent_en",
+"dl": 1538
+},
+{
+"id": "StephanAkkerman/FinTwitBERT-sentiment",
+"accR": 0.9513333333333334,
+"accL": 0.8306666666666667,
+"p": 1.0572748823912421e-32,
+"fam": "fin_en",
+"dl": 142388
+},
+{
+"id": "beethogedeon/Modern-FinBERT-large",
+"accR": 0.7506666666666667,
+"accL": 0.76,
+"p": 0.43397059099328233,
+"fam": "fin_en",
+"dl": 802
+},
+{
+"id": "neoyipeng/ModernFinBERT-base",
+"accR": 0.756,
+"accL": 0.8566666666666667,
+"p": 1.3932215871291555e-17,
+"fam": "fin_en",
+"dl": 779
+}
+]

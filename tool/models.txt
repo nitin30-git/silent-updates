@@ -1,0 +1,3 @@
+# one "model [pinned-revision]" per line; omit the revision to compare against the first commit
+cardiffnlp/twitter-roberta-base-sentiment-latest
+unitary/toxic-bert

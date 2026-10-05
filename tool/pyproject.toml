@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "silent-updates"
+version = "1.0.0"
+description = "Detect whether a Hugging Face model's checkpoint was rewritten in place since you pinned it"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["huggingface", "reproducibility", "supply-chain", "model-versioning", "mlops"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.scripts]
+silent-updates = "silent_updates:main"
+
+[tool.setuptools]
+py-modules = ["silent_updates"]

@@ -1,0 +1,18 @@
+# Copy this file to .github/workflows/ in YOUR project, next to a models.txt listing your models.
+# Weekly check that no model this project depends on has had its checkpoint rewritten.
+# Fails only on REWRITTEN, so routine safetensors conversions do not break the build.
+name: model drift
+on:
+  schedule: [{cron: "0 6 * * 1"}]
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install "git+https://github.com/nitin30-git/silent-updates#subdirectory=tool"
+      - run: silent-updates audit models.txt
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}

@@ -1,5 +1,7 @@
 # Silent Updates
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23157456.svg)](https://doi.org/10.5281/zenodo.23157456)
+
 **A Hugging Face model name is not a version.** `from_pretrained("org/model")` loads whatever is on
 `main` today. When the owner pushes new weights to the same repository, every user who has not
 pinned a revision gets them on the next download, with no warning.

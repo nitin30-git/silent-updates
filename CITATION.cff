@@ -6,6 +6,7 @@ authors:
     given-names: "Nitin"
     affiliation: "CHRIST (Deemed to be University)"
 license: MIT
+doi: 10.5281/zenodo.23157456
 repository-code: "https://github.com/nitin30-git/silent-updates"
 preferred-citation:
   type: conference-paper

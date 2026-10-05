@@ -139,6 +139,21 @@ write(d, "model.safetensors", "WEIGHTS-v1-as-safetensors")
 commit_at(d, "Adding `safetensors` variant of this model", "2024-03-01T10:00:00+00:00")
 DEFAULT_CASES.append(("default release, bot conversion", d, su.CONVERTED))
 
+# 10. conversion that also touches config.json must say so
+d = mkrepo("converted_cfg")
+write(d, "config.json", '{"model_type":"bert","id2label":{"0":"LABEL_0"}}')
+write(d, "pytorch_model.bin", "WEIGHTS-v1")
+base = commit(d, "release")
+write(d, "model.safetensors", "WEIGHTS-v1-as-safetensors")
+write(d, "config.json", '{"model_type":"bert","id2label":{"0":"negative"}}')
+commit(d, "Adding `safetensors` variant of this model")
+import io, contextlib
+buf = io.StringIO()
+with contextlib.redirect_stdout(buf):
+    su._print(su.check(d, base))
+warn_ok = "WARNING: config.json also changed" in buf.getvalue()
+CASES.append(("conversion + config edit", d, base, su.CONVERTED))
+
 print(f"{'scenario':<34s} {'expected':<10s} {'got':<10s} result")
 fails = 0
 for name, repo, base, expect in CASES:
@@ -153,6 +168,8 @@ for name, repo, expect in DEFAULT_CASES:
     ok = got == expect
     fails += not ok
     print(f"{name:<34s} {expect:<10s} {got:<10s} {'pass' if ok else 'FAIL'}")
+
+print(f"{'config warning shown':<34s} {'yes':<10s} {'yes' if warn_ok else 'no':<10s} {'pass' if warn_ok else 'FAIL'}"); fails += not warn_ok
 
 # exit codes: a rewritten checkpoint must fail CI, a conversion must not
 print()

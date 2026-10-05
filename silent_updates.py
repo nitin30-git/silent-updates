@@ -188,6 +188,9 @@ def _print(res: dict, show_pin=True):
     if res.get("note"):
         print(f"  note: {res['note']}")
     print(f"  {EXPLAIN[v]}")
+    if res.get("config_changed") and v in (CONVERTED, REWRITTEN):
+        print("  WARNING: config.json also changed. Label names may differ: check id2label before\n"
+              "  adopting, because code comparing label strings can break even when predictions do not.")
     if v != UNCHANGED:
         bits = [k.replace("_changed", "") for k in ("weights_changed", "bin_changed", "config_changed",
                                                     "tokenizer_changed") if res.get(k)]

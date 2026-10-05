@@ -123,14 +123,38 @@ def resolve(repo: str, rev: str) -> str:
         raise GitError(f"revision not found in this repository: {rev}")
 
 
+GRACE_DAYS = 7
+WEIGHT_PATHSPECS = ("model.safetensors", "pytorch_model.bin",
+                    "model-*.safetensors", "pytorch_model-*.bin")
+
+
+def release_state(repo: str):
+    """The commit to treat as 'as released' when the user gives no --since.
+
+    Most repositories start with a commit holding only .gitattributes or a README, so the very first
+    commit usually has no weights at all. As in the study, the release is the first commit that
+    contains weights, plus a short grace period for upload fix-ups (last commit within
+    GRACE_DAYS days of the first weights)."""
+    log = _git(repo, "log", "--reverse", "--first-parent", "-m", "--diff-filter=AM",
+               "--format=%H%x09%cI", "--", *WEIGHT_PATHSPECS)
+    first = next((l for l in log.splitlines() if l.strip()), None)
+    if first is None:
+        root = _git(repo, "rev-list", "--max-parents=0", "HEAD").split()[-1]
+        return root, "no weight files found in the history; compared against the first commit"
+    sha, iso = first.split("\t")
+    from datetime import datetime, timedelta
+    cut = (datetime.fromisoformat(iso) + timedelta(days=GRACE_DAYS)).isoformat()
+    base = _git(repo, "rev-list", "--first-parent", "-1", f"--before={cut}", "HEAD").strip() or sha
+    return base, (f"no --since given; release = last commit within {GRACE_DAYS} days of the first "
+                  f"weights ({iso[:10]}), pass --since to use your own pin")
+
+
 def check(model: str, since: str | None, token=None) -> dict:
     repo = clone_metadata(model, token=token)
     try:
         head = head_sha(repo)
         if since is None:
-            first = _git(repo, "rev-list", "--max-parents=0", "HEAD").split()[-1]
-            base = first
-            note = "no --since given; compared against the first commit"
+            base, note = release_state(repo)
         else:
             base = resolve(repo, since)
             note = ""

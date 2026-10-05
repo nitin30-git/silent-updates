@@ -25,7 +25,7 @@ rewrite does not.
 ## Install
 
 ```bash
-pip install "git+https://github.com/nitin30-git/silent-updates#subdirectory=tool"
+pip install "git+https://github.com/YOUR-USERNAME/silent-updates#subdirectory=tool"
 ```
 
 Needs Python 3.9+ and `git`. Nothing else, and no GPU.
@@ -43,7 +43,9 @@ silent-updates pin cardiffnlp/twitter-roberta-base-sentiment
 silent-updates audit models.txt
 ```
 
-`models.txt` holds one `model [revision]` per line; `#` starts a comment.
+`models.txt` holds one `model [revision]` per line; `#` starts a comment. With no revision, the tool
+compares against the model's *release state*: the last commit within 7 days of the first commit that
+contains weights (most repositories start with a commit that holds no weights at all).
 
 ```
 cardiffnlp/twitter-roberta-base-sentiment  <commit>
@@ -79,7 +81,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.11"}
-      - run: pip install "git+https://github.com/nitin30-git/silent-updates#subdirectory=tool"
+      - run: pip install "git+https://github.com/YOUR-USERNAME/silent-updates#subdirectory=tool"
       - run: silent-updates audit models.txt
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}   # only needed for gated or private repos
